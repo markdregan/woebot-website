@@ -230,14 +230,14 @@ button {
     text-transform: uppercase;
     line-height: 1.42857143;
     text-align: center;
-    color: #333;
+    color: #ffffff;
     border: 1px solid transparent;
     border-radius: 3px;
 }
 
 .btn-ellipse {
     position: relative;
-    background-color: #f2f2f2;
+    background-color: #5A9CE9;
     z-index: 1;
     overflow: hidden;
     -webkit-transition: 0.2s;
@@ -257,7 +257,7 @@ button {
     content: '';
     width: 20px;
     height: 20px;
-    background: #48afcb;
+    background: #515B67;
     border-radius: 50%;
     z-index: -1;
 	-webkit-transition: 0.5s;
@@ -283,9 +283,9 @@ button {
 }
 
 .btn-ellipse:hover {
-    border-color: #48afcb;
-    background: #48afcb;
-    color: #fff;
+    border-color: #515B67;
+    background: #515B67;
+    color: #ffffff;
     -webkit-transition-delay: 0.45s;
     -moz-transition-delay: 0.45s;
     -o-transition-delay: 0.45s;
@@ -314,9 +314,9 @@ button:active.focus,
 button.active.focus,
 button:active,
 .btn.active {
-    border-color: #48afcb;
-    background: #48afcb;
-    color: #fff;
+    border-color: #515B67;
+    background: #515B67;
+    color: #ffffff;
     box-shadow: none;
     outline: 0;
     outline-offset: 0;
@@ -330,9 +330,9 @@ button:active,
 .btn.active.focus,
 .btn:active,
 .btn.active {
-    border-color: #48afcb;
-    background: #48afcb;
-    color: #fff;
+    border-color: #515B67;
+    background: #515B67;
+    color: #ffffff;
     box-shadow: none;
     outline: 0;
     outline-offset: 0;
@@ -1446,9 +1446,16 @@ button.mfp-close:active:focus {
 .pricing.active {
 	padding: 40px 40px;
     margin-top: -8px;
+    background-color: #FFFBE9;
+    border-top: 3px solid #FFE053;
 }
 
 .pricing-title {
+    font-size: 16px;
+    margin: 0 0 16px;
+}
+
+.pricing-title-note {
     font-size: 16px;
     margin: 0 0 16px;
 }
@@ -1457,6 +1464,12 @@ button.mfp-close:active:focus {
     padding: 16px 0 16px;
     font-size: 32px;
     border-top: 3px solid #EEF0F3;
+}
+
+.pricing-price.active {
+    padding: 16px 0 16px;
+    font-size: 32px;
+    border-top: 3px solid #FFF4C0;
 }
 
 .pricing-price span {
@@ -1488,6 +1501,13 @@ button.mfp-close:active:focus {
     list-style: none;
     padding: 16px 0 16px;
     border-top: 3px solid #EEF0F3
+}
+
+.pricing-features.active {
+    text-align: right;
+    list-style: none;
+    padding: 16px 0 16px;
+    border-top: 3px solid #FFF4C0
 }
 
 .pricing-features li {
