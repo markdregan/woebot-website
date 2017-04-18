@@ -111,7 +111,7 @@
 							<div class="col-md-4 col-md-offset-4">
                                 <img src="img/intro-mockup/woebot.png" class="woebot-icon">
                                 
-                                <h1 id="example1" class="mb-15">Hi, I'm Woebot</h1>
+                                <h1 class="mb-15 type-it">Hi, I'm Woebot</h1>
                                 
                                 <p class="mb-25">I'm ready to listen, 24/7. No couches, no meds, no childhood sh*t. Just strategies to improve your mood. And the occasional dorky joke. </p>
                                                                 
@@ -144,7 +144,7 @@
 				
  				    <!--=== start section-title ===-->
 					<div class="section-title">
-						<h2>Here’s what I can do</h2>
+						<h2 class="type-it">Here’s what I can do</h2>
 						<h6 class="font-alt">Features</h6>
 					</div>
 					<!--=== end section-title ===-->
@@ -209,7 +209,7 @@
 							<div class="col-md-4 hidden-sm hidden-xs">
 							
 								<!--=== start feature image ===-->
-								<img src="img/more-features/01.png" class="img-responsive img-center wow" data-wow-delay="0.5s" alt="" />
+								<img src="img/more-features/WoebotApp.png" class="img-responsive img-center wow" data-wow-delay="0.5s" alt="" />
 								<!--=== end feature image ===-->
 								
 							</div>
@@ -287,7 +287,7 @@
 				
 				    <!--=== start section-title ===-->
 					<div class="section-title">
-						<h2>Humans really seem to like me</h2>
+						<h2 class="type-it">Humans really seem to like me</h2>
 						<h6 class="font-alt">Testimonials</h6>
 					</div>
 					<!--=== end section-title ===-->
@@ -399,7 +399,7 @@
 								<div class="mockup-text mb-sm-80 mb-xs-65 wow fadeInUp" data-wow-delay="0.2s">
 								
 									<h6 class="font-alt">Research based</h6>
-									<h2 class="mb-25">I was created by scientists</h2>
+									<h2 class="mb-25 type-it">I was created by scientists</h2>
 									
 									<p>
 										In a randomized controlled trial at Stanford University, college students who chatted with me significantly reduced symptoms of depression in just 2 weeks.
@@ -445,7 +445,7 @@
 				
 					<!--=== start section-title ===-->
 					<div class="section-title">
-						<h2>I have these payment options</h2>
+						<h2 class="type-it">I have these payment options</h2>
                         <h6 class="font-alt">Pricing</h6>
 					</div>
 					<!--=== end section-title ===-->
@@ -576,7 +576,7 @@
 				
 					<!--=== start section-title ===-->
 					<div class="section-title">
-						<h2>Meet my team</h2>
+						<h2 class="type-it">Meet my team</h2>
                         <h6 class="font-alt">We're all friends</h6>
 					</div>
 					<!--=== end section-title ===-->
@@ -623,7 +623,7 @@
 								<!--=== start team-member ===-->
 								<div class="team-member mb-sm-30 mb-xs-15 wow fadeInLeft" data-wow-delay="0.4s">
 									<div class="team-img">
-										<img src="img/team/03.jpg" alt="" />
+										<img src="img/team/David.png" alt="" />
 									</div>
 									<div class="team-member-info">
 										<h5>David Lim</h5>
@@ -640,7 +640,7 @@
 								<!--=== start team-member ===-->
 								<div class="team-member wow fadeInLeft" data-wow-delay="0.5s">
 									<div class="team-img">
-										<img src="img/team/04.jpg" alt="" />
+										<img src="img/team/Woebot.png" alt="" />
 									</div>
 									<div class="team-member-info">
 										<h5>Woebot</h5>
@@ -670,7 +670,7 @@
 				
 					<!--=== start section-title ===-->
 					<div class="section-title">
-						<h2>We get asked a lot...</h2>
+						<h2 class="type-it">We get asked a lot...</h2>
 						<h6 class="font-alt">FAQs</h6>
 					</div>
 					<!--=== end section-title ===-->
@@ -808,7 +808,7 @@
 					
 					<!--=== start section-title ===-->
 					<div class="section-title">
-						<h2>I'm on social media too</h2>
+						<h2 class="type-it">I'm on social media too</h2>
 						<h6 class="font-alt">follow me</h6>
 					</div>
 					<!--=== end section-title ===-->
@@ -822,7 +822,7 @@
 								<div class="icon-box top wow flipInX" data-wow-delay="0.2s">
 								
 									<div class="icon-top-alt">
-										<a href=""><i class="ion-social-twitter"></i></a>
+										<a href="https://twitter.com/drwoebot" target="_blank"><i class="ion-social-twitter"></i></a>
 									</div>
 									
 									<div class="icon-box-content">
@@ -841,7 +841,7 @@
 								<div class="icon-box top wow flipInX" data-wow-delay="0.3s">
 								
 									<div class="icon-top-alt">
-										<a href=""><i class="ion-social-facebook"></i></a>
+										<a href="https://m.me/drwoebot" target="_blank"><i class="ion-social-facebook"></i></a>
 									</div>
 									
 									<div class="icon-box-content">
@@ -906,25 +906,18 @@
         <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
         
         <script>
-            $('#example1').typeIt({
-                 strings: 'This is a simple string.',
+            $('.type-it').typeIt({
+                 strings: '',
                  speed: 70,
-                 autoStart: true
+                 autoStart: false
             });
         </script>
 		
 		<!--bootstrap-->
 		<script src="js/bootstrap.js"></script>
 		
-		<!-- Include individual files as needed -->
-		
-		<!-- Plugins -->
-		
 		<!--singlePageNav-->
 		<script src="plugins/jquery.singlePageNav.js"></script>
-		
-		<!--parallax-->
-		<script src="plugins/parallax.js"></script> 
 		
 		<!--ajaxchimp-->
 		<script src="plugins/jquery.ajaxchimp.js"></script> 
@@ -939,7 +932,6 @@
 		<script src="plugins/owlcarousel/owl.carousel.js"></script>
 		
 		<!-- theme script -->
-		<script src="js/newsletter.js"></script>
 		<script src="js/script.js"></script>
 		
 		

@@ -231,7 +231,7 @@ button {
     line-height: 1.42857143;
     text-align: center;
     color: #ffffff;
-    border: 1px solid transparent;
+    border: 1px solid #5A9CE9;
     border-radius: 3px;
 }
 
@@ -1244,7 +1244,7 @@ button.mfp-close:active:focus {
 }
 
 .team-member:hover .team-img img {
-    opacity: 0.8
+    opacity: 1
 }
 
 .team-member-info {
