@@ -2182,6 +2182,12 @@ footer {
         padding-bottom: 0;
         text-align: center;
     }
+    
+    .mockup-payment {
+        padding-top: 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
 	
 }
 
