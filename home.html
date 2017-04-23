@@ -481,10 +481,24 @@
 									
 									<!--=== start pricing-btn ===-->
 									<div class="price-btn">
-										<a href="https://m.me/drwoebot?subscribe=weekly" class="btn btn-ellipse">Subscribe Now</a>
+										<a class="btn btn-ellipse" id="weekly">Subscribe Now</a>
 									</div>
 									<!--=== ejd pricing-btn ===-->
-									
+                                    
+                                    <!--=== start stript payment ===-->
+                                    <form action="/create_subscription.php" method="POST">
+                                      <script
+                                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                        data-image="img/intro-mockup/woebot.png"
+                                        data-name="Weekly Subscription"
+                                        data-description="$12/week"
+                                        data-amount="1200"
+                                        data-allow-remember-me="false">
+                                      </script>
+                                    </form>
+                                    <!--=== end stript payment ===-->
+                                    
 								</div>
 								<!--=== end pricing ===-->
 								
@@ -516,9 +530,23 @@
 									
 									<!--=== start pricing-btn ===-->
 									<div class="price-btn">
-										<a href="https://m.me/drwoebot?subscribe=monthly" class="btn btn-ellipse">Subscribe Now</a>
+										<a class="btn btn-ellipse" id="monthly">Subscribe Now</a>
 									</div>
 									<!--=== end pricing-btn ===-->
+                                    
+                                    <!--=== start stript payment ===-->
+                                    <form action="/create_subscription.php" method="POST">
+                                      <script
+                                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                        data-image="img/intro-mockup/woebot.png"
+                                        data-name="Monthly Subscription"
+                                        data-description="$9/week, billed monthly"
+                                        data-amount="3600"
+                                        data-allow-remember-me="false">
+                                      </script>
+                                    </form>
+                                    <!--=== end stript payment ===-->
 									
 								</div>
 								<!--=== end pricing ===-->
@@ -551,9 +579,23 @@
 									
 									<!--=== start pricing-btn ===-->
 									<div class="price-btn">
-										<a href="https://m.me/drwoebot?subscribe=annually" class="btn btn-ellipse">Subscribe Now</a>
+										<a class="btn btn-ellipse" id="annually">Subscribe Now</a>
 									</div>
 									<!--=== ejd pricing-btn ===-->
+                                    
+                                    <!--=== start stript payment ===-->
+                                    <form action="/create_subscription.php" method="POST">
+                                      <script
+                                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                        data-image="img/intro-mockup/woebot.png"
+                                        data-name="Annual Subscription"
+                                        data-description="$6/week, billed annually"
+                                        data-amount="31200"
+                                        data-allow-remember-me="false">
+                                      </script>
+                                    </form>
+                                    <!--=== end stript payment ===-->
 									
 								</div>
 								<!--=== end pricing ===-->
@@ -941,6 +983,10 @@
 		
         <!-- outbound link tracker -->
 		<script src="js/outboundlinktracker.js"></script>
+
+        
+        <!-- Strip Payments -->
+        <script src="https://checkout.stripe.com/checkout.js"></script>
 		
 	</body>
 	<!--=== end body ===-->
