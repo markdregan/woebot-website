@@ -951,6 +951,14 @@ ul.main-nav-inner {
     padding-bottom: 140px
 }
 
+.mockup-payment {
+    padding-top: 140px;
+    padding-bottom: 140px;
+    text-align: center;
+}
+
+
+
 .mockup {
     position: relative
 }
@@ -1767,6 +1775,30 @@ ul.errorMessages li:before {
 
 /* -====================== Payment flow ======================-*/
 
+#parties_brand {
+    margin-bottom: 24px
+}
+
+#parties_brand .icon {
+    display: inline
+}
+
+#parties_brand .icon img {
+    width: 128px;
+    height: 128px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 18px solid rgba(0, 0, 0, .08)
+}
+
+#parties_brand .icon.user {
+    margin-right: -7px
+}
+
+#parties_brand .icon.third_party {
+    margin-left: -7px
+}
+
 /* CSS for Credit Card Payment form */
 .credit-card-box .panel-title {
     display: inline;
@@ -1802,7 +1834,7 @@ ul.errorMessages li:before {
 .credit-card-box .display-td {
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
+    width: 50%;
 }
 /* Just looks nicer */
 .credit-card-box .panel-heading img {
