@@ -1,5 +1,5 @@
 # woebot-website
 Website for Woebot.io
 
-### Master branch deploys to: https://www.woebot.io
-### Release branch deploys to: https://www.woebot-website-staging.herokuapp.com/
+### Master branch deploys to: woebot.io
+### Release branch deploys to: woebot-website-staging.herokuapp.com/
