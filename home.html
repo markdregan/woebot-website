@@ -122,6 +122,10 @@
                                 <a href="https://m.me/drwoebot" target="_blank" class="btn btn-ellipse">Say Hello</a>
                                 <!--=== end btn ===--> 
                                 
+                                <div class="mt-35">
+                                    <img src="img/assets/scrolldown-notext.png">
+                                </div>
+                                
                             </div>
 							
 						</div>
@@ -141,6 +145,11 @@
 			=====================-->
             
             <!--=====================
+				start page-content
+			=====================-->
+			<main class="page-content">
+            
+                <!--=====================
 					start more-features
 				=====================-->
 				<section id="features" class="section-padding">
@@ -283,7 +292,7 @@
 					end more-features
 				=====================-->
 			
-			<!--=====================
+			    <!--=====================
 					start testimonial
 				=====================-->
 				<section id="testimonials" class="section-padding">
@@ -383,11 +392,6 @@
 				<!--=====================
 					end testimonial
 				=====================-->
-            
-            <!--=====================
-				start page-content
-			=====================-->
-			<main class="page-content">
 			
 				<!--=====================
 					start features
@@ -478,13 +482,21 @@
 										<li>Billed weekly</li>
 									</ul>
 									<!--=== end pricing-features ===-->
-									
-									<!--=== start pricing-btn ===-->
-									<div class="price-btn">
-										<a href="https://m.me/drwoebot?subscribe=weekly" class="btn btn-ellipse">Subscribe Now</a>
-									</div>
-									<!--=== ejd pricing-btn ===-->
-									
+                                    
+                                    <!--=== start stript payment ===-->
+                                    <form action="/create_subscription.php" method="POST">
+                                      <script
+                                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                        data-image="img/intro-mockup/woebot.png"
+                                        data-name="Weekly Subscription"
+                                        data-description="$12/week"
+                                        data-amount="1200"
+                                        data-allow-remember-me="false">
+                                      </script>
+                                    </form>
+                                    <!--=== end stript payment ===-->
+                                    
 								</div>
 								<!--=== end pricing ===-->
 								
@@ -513,12 +525,20 @@
 										<li>Billed Monthly</li>
 									</ul>
 									<!--=== end pricing-features ===-->
-									
-									<!--=== start pricing-btn ===-->
-									<div class="price-btn">
-										<a href="https://m.me/drwoebot?subscribe=monthly" class="btn btn-ellipse">Subscribe Now</a>
-									</div>
-									<!--=== end pricing-btn ===-->
+                                    
+                                    <!--=== start stript payment ===-->
+                                    <form action="/create_subscription.php" method="POST">
+                                      <script
+                                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                        data-image="img/intro-mockup/woebot.png"
+                                        data-name="Monthly Subscription"
+                                        data-description="$9/week, billed monthly"
+                                        data-amount="3600"
+                                        data-allow-remember-me="false">
+                                      </script>
+                                    </form>
+                                    <!--=== end stript payment ===-->
 									
 								</div>
 								<!--=== end pricing ===-->
@@ -548,12 +568,20 @@
 										<li>Billed annually</li>
 									</ul>
 									<!--=== end pricing-features ===-->
-									
-									<!--=== start pricing-btn ===-->
-									<div class="price-btn">
-										<a href="https://m.me/drwoebot?subscribe=annually" class="btn btn-ellipse">Subscribe Now</a>
-									</div>
-									<!--=== ejd pricing-btn ===-->
+                                    
+                                    <!--=== start stript payment ===-->
+                                    <form action="/create_subscription.php" method="POST">
+                                      <script
+                                        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                                        data-image="img/intro-mockup/woebot.png"
+                                        data-name="Annual Subscription"
+                                        data-description="$6/week, billed annually"
+                                        data-amount="31200"
+                                        data-allow-remember-me="false">
+                                      </script>
+                                    </form>
+                                    <!--=== end stript payment ===-->
 									
 								</div>
 								<!--=== end pricing ===-->
@@ -941,6 +969,10 @@
 		
         <!-- outbound link tracker -->
 		<script src="js/outboundlinktracker.js"></script>
+
+        
+        <!-- Strip Payments -->
+        <script src="https://checkout.stripe.com/checkout.js"></script>
 		
 	</body>
 	<!--=== end body ===-->
