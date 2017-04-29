@@ -1,0 +1,24 @@
+{
+  "name": "stripe-woebot",
+  "version": "1.0.0",
+  "description": "stripe for woebot webpage",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "dotenv": "4.0.0",
+    "express": "^4.15.2",
+    "mailgun-js": "0.10.1",
+    "stripe": "^4.18.0",
+    "yarn": "0.22.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pierrerappolt/woebot-website.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
